@@ -1,17 +1,17 @@
 /* General Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
-    background: linear-gradient(135deg, #ffd89b, #19547b);
+    background: linear-gradient(to right, #ffd89b, #19547b);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 header {
-    background-color: rgba(0, 0, 0, 0.8);
+    background: linear-gradient(120deg, #ff7e5f, #feb47b);
     color: white;
     padding: 20px;
     width: 100%;
@@ -34,7 +34,7 @@ nav {
 }
 
 nav a {
-    color: white;
+    color: #ffdd57;
     margin: 0 15px;
     text-decoration: none;
     font-size: 1.1rem;
@@ -42,7 +42,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #ffd700;
+    color: #f5a623;
 }
 
 main {
@@ -57,8 +57,8 @@ main {
 .card {
     background: rgba(255, 255, 255, 0.95);
     padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     margin: 20px 0;
     width: 100%;
     max-width: 800px;
@@ -71,7 +71,7 @@ main {
 }
 
 h2 {
-    color: #333;
+    color: #ff7e5f;
     font-weight: bold;
 }
 
@@ -93,6 +93,13 @@ ul li::before {
     position: absolute;
     left: 0;
 }
+
+/* Section Colors */
+#about { background: linear-gradient(to right, #ffafbd, #ffc3a0); }
+#skills { background: linear-gradient(to right, #2193b0, #6dd5ed); }
+#experience { background: linear-gradient(to right, #cc2b5e, #753a88); }
+#projects { background: linear-gradient(to right, #42275a, #734b6d); }
+#contact { background: linear-gradient(to right, #0f0c29, #302b63, #24243e); }
 
 @keyframes fadeIn {
     from { opacity: 0; }
