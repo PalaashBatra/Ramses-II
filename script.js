@@ -1,12 +1,8 @@
-// Smooth Scrolling for Navigation Links
-document.querySelectorAll('nav a').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        const targetId = this.getAttribute('href').substring(1);
-        document.getElementById(targetId).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
+// Toggle Dark Mode
+const themeToggle = document.getElementById('theme-toggle');
 
-console.log("Welcome to Ramses II's legacy website!");
+themeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    themeToggle.textContent = 
+        document.body.classList.contains('dark-mode') ? 'Switch to Light Mode' : 'Switch to Dark Mode';
+});
